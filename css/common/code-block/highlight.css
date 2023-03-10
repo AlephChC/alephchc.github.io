@@ -4,10 +4,10 @@
   --primary-color-light-2: #006fe0;
   --primary-color-dark-1: #00448a;
   --primary-color-dark-2: #003d7a;
-  --background-color-1: #fff;
-  --background-color-2: #f7f7f7;
-  --background-color-3: #f0f0f0;
-  --content-background-color: #fff;
+  --background-color-1: #d6d2cc;
+  --background-color-2: #d0ccc5;
+  --background-color-3: #cbc6be;
+  --content-background-color: #d6d2cc;
   --text-color-1: #484853;
   --text-color-2: #4c4c57;
   --text-color-3: #50505c;
@@ -15,19 +15,19 @@
   --text-color-5: #b7b7c0;
   --text-color-6: #ededef;
   --toc-text-color: #6f6f80;
-  --badge-color: #f0f0f0;
+  --badge-color: #cbc6be;
   --badge-background-color: #9393a1;
-  --border-color: #b3b3b3;
+  --border-color: #9e9586;
   --selection-color: #005ebd;
   --shadow-color: rgba(0,0,0,0.2);
   --shadow-hover-color: rgba(0,0,0,0.3);
   --scrollbar-color: #60606e;
-  --scrollbar-background-color: #e6e6e6;
+  --scrollbar-background-color: #c3beb5;
   --toc-scrollbar-color: rgba(80,80,92,0.1);
   --copyright-info-color: #c03;
   --avatar-background-color: #00448a;
-  --header-transparent-background-1: rgba(255,255,255,0.28);
-  --header-transparent-background-2: rgba(255,255,255,0.4);
+  --header-transparent-background-1: rgba(214,210,204,0.28);
+  --header-transparent-background-2: rgba(214,210,204,0.4);
   --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
   --article-aging-tips-color: #b78d0f;
   --article-aging-tips-background-color: rgba(183,141,15,0.1);
@@ -40,10 +40,10 @@
     --primary-color-light-2: #006fe0;
     --primary-color-dark-1: #00448a;
     --primary-color-dark-2: #003d7a;
-    --background-color-1: #fff;
-    --background-color-2: #f7f7f7;
-    --background-color-3: #f0f0f0;
-    --content-background-color: #fff;
+    --background-color-1: #d6d2cc;
+    --background-color-2: #d0ccc5;
+    --background-color-3: #cbc6be;
+    --content-background-color: #d6d2cc;
     --text-color-1: #484853;
     --text-color-2: #4c4c57;
     --text-color-3: #50505c;
@@ -51,19 +51,19 @@
     --text-color-5: #b7b7c0;
     --text-color-6: #ededef;
     --toc-text-color: #6f6f80;
-    --badge-color: #f0f0f0;
+    --badge-color: #cbc6be;
     --badge-background-color: #9393a1;
-    --border-color: #b3b3b3;
+    --border-color: #9e9586;
     --selection-color: #005ebd;
     --shadow-color: rgba(0,0,0,0.2);
     --shadow-hover-color: rgba(0,0,0,0.3);
     --scrollbar-color: #60606e;
-    --scrollbar-background-color: #e6e6e6;
+    --scrollbar-background-color: #c3beb5;
     --toc-scrollbar-color: rgba(80,80,92,0.1);
     --copyright-info-color: #c03;
     --avatar-background-color: #00448a;
-    --header-transparent-background-1: rgba(255,255,255,0.28);
-    --header-transparent-background-2: rgba(255,255,255,0.4);
+    --header-transparent-background-1: rgba(214,210,204,0.28);
+    --header-transparent-background-2: rgba(214,210,204,0.4);
     --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
     --article-aging-tips-color: #b78d0f;
     --article-aging-tips-background-color: rgba(183,141,15,0.1);
@@ -113,10 +113,10 @@
   --primary-color-light-2: #006fe0;
   --primary-color-dark-1: #00448a;
   --primary-color-dark-2: #003d7a;
-  --background-color-1: #fff;
-  --background-color-2: #f7f7f7;
-  --background-color-3: #f0f0f0;
-  --content-background-color: #fff;
+  --background-color-1: #d6d2cc;
+  --background-color-2: #d0ccc5;
+  --background-color-3: #cbc6be;
+  --content-background-color: #d6d2cc;
   --text-color-1: #484853;
   --text-color-2: #4c4c57;
   --text-color-3: #50505c;
@@ -124,19 +124,19 @@
   --text-color-5: #b7b7c0;
   --text-color-6: #ededef;
   --toc-text-color: #6f6f80;
-  --badge-color: #f0f0f0;
+  --badge-color: #cbc6be;
   --badge-background-color: #9393a1;
-  --border-color: #b3b3b3;
+  --border-color: #9e9586;
   --selection-color: #005ebd;
   --shadow-color: rgba(0,0,0,0.2);
   --shadow-hover-color: rgba(0,0,0,0.3);
   --scrollbar-color: #60606e;
-  --scrollbar-background-color: #e6e6e6;
+  --scrollbar-background-color: #c3beb5;
   --toc-scrollbar-color: rgba(80,80,92,0.1);
   --copyright-info-color: #c03;
   --avatar-background-color: #00448a;
-  --header-transparent-background-1: rgba(255,255,255,0.28);
-  --header-transparent-background-2: rgba(255,255,255,0.4);
+  --header-transparent-background-1: rgba(214,210,204,0.28);
+  --header-transparent-background-2: rgba(214,210,204,0.4);
   --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
   --article-aging-tips-color: #b78d0f;
   --article-aging-tips-background-color: rgba(183,141,15,0.1);
@@ -179,10 +179,10 @@
 }
 :root {
   --toolbar-foreground: #50505c;
-  --toolbar-background: #f0f0f0;
+  --toolbar-background: #cbc6be;
   --code-foreground: #535360;
-  --code-background: #f2f2f2;
-  --highlight-background: #fafafa;
+  --code-background: #cdc8c0;
+  --highlight-background: #d2cec7;
   --highlight-foreground: #535360;
   --highlight-comment: #8e908c;
   --highlight-red: #c82829;
@@ -193,15 +193,15 @@
   --highlight-blue: #4271ae;
   --highlight-purple: #8959a8;
   --highlight-gutter-color: #585865;
-  --highlight-gutter-bg-color: #f2f2f2;
+  --highlight-gutter-bg-color: #cdc8c0;
 }
 @media (prefers-color-scheme: light) {
   :root {
     --toolbar-foreground: #50505c;
-    --toolbar-background: #f0f0f0;
+    --toolbar-background: #cbc6be;
     --code-foreground: #535360;
-    --code-background: #f2f2f2;
-    --highlight-background: #fafafa;
+    --code-background: #cdc8c0;
+    --highlight-background: #d2cec7;
     --highlight-foreground: #535360;
     --highlight-comment: #8e908c;
     --highlight-red: #c82829;
@@ -212,7 +212,7 @@
     --highlight-blue: #4271ae;
     --highlight-purple: #8959a8;
     --highlight-gutter-color: #585865;
-    --highlight-gutter-bg-color: #f2f2f2;
+    --highlight-gutter-bg-color: #cdc8c0;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -237,10 +237,10 @@
 }
 .light-mode {
   --toolbar-foreground: #50505c;
-  --toolbar-background: #f0f0f0;
+  --toolbar-background: #cbc6be;
   --code-foreground: #535360;
-  --code-background: #f2f2f2;
-  --highlight-background: #fafafa;
+  --code-background: #cdc8c0;
+  --highlight-background: #d2cec7;
   --highlight-foreground: #535360;
   --highlight-comment: #8e908c;
   --highlight-red: #c82829;
@@ -251,7 +251,7 @@
   --highlight-blue: #4271ae;
   --highlight-purple: #8959a8;
   --highlight-gutter-color: #585865;
-  --highlight-gutter-bg-color: #f2f2f2;
+  --highlight-gutter-bg-color: #cdc8c0;
 }
 .dark-mode {
   --toolbar-foreground: #bebec6;
