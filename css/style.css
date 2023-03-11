@@ -595,6 +595,7 @@ button {
 .keep-markdown-body p {
   color: var(--text-color-3);
   line-height: 2;
+  text-align: justify;
 }
 .keep-markdown-body a {
   position: relative;
@@ -683,6 +684,7 @@ button {
 .keep-markdown-body h2 {
   font-weight: 600;
   font-size: 1.7rem;
+  text-align: center;
 }
 @media (max-width: 800px) {
   .keep-markdown-body h2 {
