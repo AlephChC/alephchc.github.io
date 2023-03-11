@@ -331,6 +331,19 @@
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
   transition-property: color, background, box-shadow, border-color;
 }
+*::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+  transition: all 0.2s ease;
+  display: none;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color);
+  border-radius: 0.1rem;
+}
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-background-color);
+}
 html,
 body {
   position: relative;
@@ -344,8 +357,28 @@ body {
   font-family: Optima-Regular, Optima, PingFang SC, Microsoft YaHei, sans-serif;
   line-height: 22px;
   letter-spacing: 0.2px;
-  overflow-y: scroll;
   background: var(--background-color-1);
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+@media (max-width: 800px) {
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+    display: none;
+  }
 }
 @media (max-width: 800px) {
   html,
