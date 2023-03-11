@@ -331,18 +331,6 @@
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
   transition-property: color, background, box-shadow, border-color;
 }
-*::-webkit-scrollbar {
-  width: 0.4rem;
-  height: 0.4rem;
-  transition: all 0.2s ease;
-}
-*::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-color);
-  border-radius: 0.1rem;
-}
-*::-webkit-scrollbar-track {
-  background: var(--scrollbar-background-color);
-}
 html,
 body {
   position: relative;
@@ -356,26 +344,8 @@ body {
   font-family: Optima-Regular, Optima, PingFang SC, Microsoft YaHei, sans-serif;
   line-height: 22px;
   letter-spacing: 0.2px;
+  overflow-y: scroll;
   background: var(--background-color-1);
-}
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  width: 0.6rem;
-  height: 0.6rem;
-}
-@media (max-width: 800px) {
-  html::-webkit-scrollbar,
-  body::-webkit-scrollbar {
-    width: 0.5rem;
-    height: 0.5rem;
-  }
-}
-@media (max-width: 500px) {
-  html::-webkit-scrollbar,
-  body::-webkit-scrollbar {
-    width: 0.4rem;
-    height: 0.4rem;
-  }
 }
 @media (max-width: 800px) {
   html,
@@ -1707,7 +1677,7 @@ pre .javascript .function {
   position: relative;
   box-sizing: border-box;
   width: 80%;
-  max-width: 928px;
+  max-width: 1113.6px;
   height: 100%;
   transition-delay: 0s, 0s, 0s, 0s, 0s, 0s;
   transition-timing-function: ease, ease, ease, ease, ease, ease;
@@ -1715,7 +1685,7 @@ pre .javascript .function {
   transition-property: color, background, box-shadow, border-color, max-width, width;
 }
 .has-toc .page-container .page-main-content .page-main-content-middle .main-content {
-  max-width: 1113.6px;
+  max-width: 1336.32px;
 }
 @media (max-width: 800px) {
   .page-container .page-main-content .page-main-content-middle .main-content {
@@ -1733,7 +1703,7 @@ pre .javascript .function {
 .page-container .post-tools {
   position: fixed;
   top: 108px;
-  left: calc((100vw - 928px / 2) - 5rem);
+  left: calc((100vw - 1113.6px / 2) - 5rem);
   box-sizing: border-box;
   opacity: 0;
   transition-delay: 0s, 0s, 0s, 0s, 0s, 0s, 0.2s, 0s;
@@ -2080,7 +2050,7 @@ pre .javascript .function {
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  max-width: 928px;
+  max-width: 1113.6px;
   height: 100%;
   transition-delay: 0s, 0s, 0s, 0s, 0s, 0s;
   transition-timing-function: ease, ease, ease, ease, ease, ease;
@@ -2091,7 +2061,7 @@ pre .javascript .function {
   max-width: 1113.6px;
 }
 .has-toc .header-wrapper .header-content {
-  max-width: 1113.6px;
+  max-width: 1336.32px;
 }
 @media (max-width: 800px) {
   .header-wrapper .header-content {
@@ -2447,25 +2417,6 @@ pre .javascript .function {
 .side-tools-container .side-tools-list.show {
   transform: translateX(0);
   opacity: 1;
-}
-.side-tools-container .exposed-tools-list .tool-scroll-to-top {
-  display: none;
-}
-.side-tools-container .exposed-tools-list .tool-scroll-to-top.show {
-  display: flex;
-}
-.side-tools-container .exposed-tools-list .tool-scroll-to-top:hover .percent {
-  display: none;
-}
-.side-tools-container .exposed-tools-list .tool-scroll-to-top:hover .arrow-up {
-  display: flex;
-}
-.side-tools-container .exposed-tools-list .tool-scroll-to-top .arrow-up {
-  display: none;
-}
-.side-tools-container .exposed-tools-list .tool-scroll-to-top .percent {
-  display: flex;
-  font-size: 1rem;
 }
 .archive-list-container .archive-item {
   margin-bottom: 38px;
