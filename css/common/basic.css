@@ -364,7 +364,7 @@ body::-webkit-scrollbar {
   width: 0.6rem;
   height: 0.6rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   html::-webkit-scrollbar,
   body::-webkit-scrollbar {
     width: 0.5rem;
@@ -380,7 +380,7 @@ body::-webkit-scrollbar {
     display: none;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   html,
   body {
     font-size: 14.591999999999999px;
