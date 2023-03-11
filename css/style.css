@@ -2144,7 +2144,7 @@ pre .javascript .function {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
 }
 @media (max-width: 800px) {
   .header-wrapper .header-content .left .logo-title {
