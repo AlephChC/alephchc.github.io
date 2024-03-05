@@ -1,0 +1,27 @@
+.light-mode {
+	--background-color-1: #D6D2CC;
+	--content-background-color: #D6D2CC;
+}
+
+
+:root {
+    --home-post-hover-scale: 1.05;
+    --first-screen-font-size: 3rem;
+    --post-title-align: center;
+}
+
+.home-content-container .home-post-list .home-post-item, .post-page-container .post-content-container, .archives-container, .category-list-container, .tagcloud-container, .page-template-container{
+	background: var(--background-color-1);
+}
+
+.page-content.border-box.keep-markdown-body h2 a, .theme-info.info-item.default{
+	display: none;
+}
+
+.page-content.border-box.keep-markdown-body h2, .home-post-item-bottom.border-box h3{
+	text-align: center;
+}
+
+.post-page-container .post-content-container .post-content-bottom .post-title{
+	font-size: 2.2rem;
+}
