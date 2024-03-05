@@ -68,3 +68,7 @@
   box-shadow: 0 0 8px var(--shadow-hover-color);
   height: 100%;
 }
+
+.side-tools{
+  display: none;
+}
