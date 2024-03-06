@@ -74,7 +74,7 @@
   }
   .first-screen-container .first-screen-content .description{
     font-size: calc(var(--first-screen-font-size) * 0.62);
-    transform: scale(0.92, 1);
+    transform: scale(0.95, 1);
     margin-top: -7.8rem;
     color: black;
   }
