@@ -13,6 +13,7 @@ if (!window.CUSTOM_CURSOR_LOADED) {
                 "left": x,
                 "position": "absolute",
                 "font-weight": "bold",
+                "font-size": "11px",
                 "color": randomColor
                   });
              $("html").append($i);

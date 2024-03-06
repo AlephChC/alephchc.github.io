@@ -28,7 +28,7 @@
   text-shadow:  1px 1px 1px gray;
 }
 
-.first-screen-container .first-screen-content{
+.first-screen-container .first-screen-content.border-box{
   width: 100%;
 }
 
@@ -73,7 +73,7 @@
     background-repeat: repeat-x;
   }
   .first-screen-container .first-screen-content .description{
-    font-size: calc(var(--first-screen-font-size) * 0.6);
+    font-size: calc(var(--first-screen-font-size) * 0.62);
     transform: scale(0.92, 1);
     margin-top: -7.8rem;
     color: black;
