@@ -5,7 +5,7 @@
         url('../font/Kinryo.woff2') format('woff2');
 }
 
-@font-face {
+/*@font-face {
    font-family: 'paraChinfont';
    src: url('../font/YunlinSans.otf') format('opentype');
    font-weight: normal;
@@ -14,5 +14,5 @@
 @font-face {
    font-family: 'paraChinfont';
    src: url('../font/YunlinSansB.otf') format('opentype');
-   font-weight: 600;
+   font-weight: 600;*/
 }

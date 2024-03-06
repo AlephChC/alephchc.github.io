@@ -9,7 +9,7 @@
     --first-screen-font-size: 3.5rem;
     --post-title-align: center;
     --first-screen-font-family: 'customfont';
-    --base-font-family: Arial, Optima-Regular, Optima, 'paraChinfont', 'PingFang TC', 'Microsoft YaHei', sans-serif;
+/*    --base-font-family: Arial, Optima-Regular, Optima, 'paraChinfont', 'PingFang TC', 'Microsoft YaHei', sans-serif;*/
 }
 
 .page-content.border-box.keep-markdown-body h2 a, .theme-info.info-item.default{
@@ -69,7 +69,7 @@
     background-repeat: repeat-x;
   }
   .first-screen-container .first-screen-content .description{
-    font-size: calc(var(--first-screen-font-size) * 0.65);
+    font-size: calc(var(--first-screen-font-size) * 0.58);
     margin-top: -7.8rem;
     color: black;
   }
