@@ -28,6 +28,10 @@
   text-shadow:  1px 1px 1px gray;
 }
 
+.first-screen-container .first-screen-content{
+  width: 100%;
+}
+
 .page-container.border-box{
 	background-image: url(/images/bg.png);
   background-position-y: top;
@@ -70,7 +74,7 @@
   }
   .first-screen-container .first-screen-content .description{
     font-size: calc(var(--first-screen-font-size) * 0.6);
-    transform: scale(0.9, 1);
+    transform: scale(0.92, 1);
     margin-top: -7.8rem;
     color: black;
   }
