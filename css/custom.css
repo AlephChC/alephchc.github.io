@@ -69,7 +69,7 @@
     background-repeat: repeat-x;
   }
   .first-screen-container .first-screen-content .description{
-    font-size: calc(var(--first-screen-font-size) * 0.58);
+    font-size: calc(var(--first-screen-font-size) * 0.57);
     margin-top: -7.8rem;
     color: black;
   }
