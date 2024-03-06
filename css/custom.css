@@ -6,8 +6,10 @@
 
 :root {
     --home-post-hover-scale: 1.05;
-    --first-screen-font-size: 3rem;
+    --first-screen-font-size: 3.5rem;
     --post-title-align: center;
+    --first-screen-font-family: 'customfont';
+    --base-font-family: Arial, Optima-Regular, Optima, 'paraChinfont', 'PingFang TC', 'Microsoft YaHei', sans-serif;
 }
 
 .page-content.border-box.keep-markdown-body h2 a, .theme-info.info-item.default{
@@ -20,6 +22,10 @@
 
 .post-page-container .post-content-container .post-content-bottom .post-title{
 	font-size: 2.2rem;
+}
+
+.desc{
+  text-shadow:  1px 1px 1px gray;
 }
 
 .page-container.border-box{

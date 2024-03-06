@@ -1,0 +1,100 @@
+// var a_idx = 0;
+jQuery(document).ready(function($) {
+    // var time = $.timeStamp;
+    $("html").click(function(e) {
+        // var timego = e.timeStamp - time;
+        // if(timego > 1536){
+
+ 
+
+        var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+        var a = new Array
+        ("通", "江", "止", "遇", "蟹", "臻", "山", "效", "果", "假", "宕", "梗", "曾", "流", "深", "咸");
+        var $i = $("<span/>").text(a[Math.floor(Math.random() * a.length)]);
+        // a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 8,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": randomColor
+        });
+        $("html").append($i);
+        $i.animate({
+            "top": y - 200,
+            "opacity": 0
+        },
+            2000,
+            function() {
+                $i.css('display', 'none');
+            });
+
+ // if (time == 0) {
+
+ //        time = 2; //设定间隔时间（秒）
+
+ 
+
+ //        //启动计时器，倒计时time秒后自动关闭计时器。
+
+ //        var index = setInterval(function(){
+
+ //            time--;
+
+ //            if (time == 0) {
+
+ //                clearInterval(index);
+
+ //            }
+
+ //        }, 2000);
+
+ //    }
+
+
+
+// };
+
+// time = e.timeStamp;
+    // });
+    // setTimeout('delay()', 2000);
+});
+});
+
+// function delay() {
+//     $(".buryit").removeAttr("onclick");
+// }
+
+// var a_idx = 0;
+// jQuery(document).ready(function($) {
+//     var fontAll = ["通", "江", "止", "遇", "蟹", "臻", "山", "效", "果", "假", "宕", "梗", "曾", "流", "深", "咸"];
+//     $("body").click(function (e) {
+//         var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+//         var $i = $("<span/>").text(a[a_idx]);
+//         a_idx = (a_idx + 1) % a.length;
+//         var x = e.pageX,
+//         y = e.pageY;
+//         $i.css({
+//             "z-index": 5,
+//             "top": y - 20,
+//             "left": x,
+//             "position": "absolute",
+//             "font-weight": "bold",
+//             "color": randomColor
+//         });
+//         $("body").append($i);
+//         $i.animate({
+//             "top": y - 180,
+//             "opacity": 0
+//         },
+//             3000,
+//             function() {
+//                 $i.css('display', 'none');
+//         });
+
+//             });
+//         });
+
