@@ -124,3 +124,15 @@
 .side-tools{
   display: none;
 }
+
+h1{
+  text-align: center;
+}
+
+.headerlink{
+  display: none;
+}
+
+h2, h3, h4{
+  border: none!important;
+}
