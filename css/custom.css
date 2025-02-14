@@ -133,6 +133,10 @@ h1{
   display: none;
 }
 
+p{
+  text-indent: 2em;
+}
+
 h2, h3, h4{
   border: none!important;
 }
