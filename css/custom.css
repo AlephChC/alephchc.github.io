@@ -33,7 +33,7 @@
 }
 
 .page-container.border-box{
-	background-image: url(/images/bg.png);
+	background-image: url(/images/mybg.svg),url(/images/mybg.png);
   background-position-y: top;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 
 @media (max-width: 1024px) {
   .page-container.border-box{
-    background-image: url(/images/bg.png);
+    background-image: url(/images/mybg.svg),url(/images/mybg.png);
     background-position-x: right;
     background-size: auto 100vh;
     background-repeat: repeat-x;
@@ -54,7 +54,7 @@
 
 @media (max-width: 800px) {
   .page-container.border-box{
-    background-image: url(/images/bg.png);
+    background-image: url(/images/mybg.svg),url(/images/mybg.png);
     background-position-x: right;
     background-size: auto 100vh;
     background-repeat: repeat-x;
@@ -67,7 +67,7 @@
 
 @media (max-width: 500px) {
   .page-container.border-box{
-    background-image: url(/images/bg.png);
+    background-image: url(/images/mybg.svg),url(/images/mybg.png);
     background-position-x: right;
     background-size: auto 100vh;
     background-repeat: repeat-x;
