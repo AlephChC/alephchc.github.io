@@ -135,6 +135,7 @@ h1{
 
 p{
   text-indent: 2em;
+  text-align: justify!important;
 }
 
 h2, h3, h4{
