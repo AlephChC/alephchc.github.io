@@ -34,9 +34,12 @@
 
 .page-container.border-box{
 	background-image: url(/images/mybg.svg),url(/images/mybg.png);
-  background-position-y: top;
+/*  background-position-y: top;
   background-size: 100% auto;
-  background-repeat: no-repeat;
+*/
+  background-position-x: right;
+  background-size: 100vw auto;
+  background-repeat: repeat-y;
 }
 
 
@@ -44,7 +47,7 @@
   .page-container.border-box{
     background-image: url(/images/mybg.svg),url(/images/mybg.png);
     background-position-x: right;
-    background-size: auto 100vw;
+    background-size: auto 100vh;
     background-repeat: repeat-y;
   }
   .first-screen-container .first-screen-content .description{
@@ -52,11 +55,25 @@
   }
 }
 
+@media (max-width: 950px) {
+  .page-container.border-box{
+    background-image: url(/images/mybg.svg),url(/images/mybg.png);
+    background-position-x: right;
+    background-size: 100vw auto;
+    background-repeat: repeat-y;
+  }
+  .first-screen-container .first-screen-content .description{
+    font-size: calc(var(--first-screen-font-size) * 0.7);
+  }
+
+}
+
+
 @media (max-width: 800px) {
   .page-container.border-box{
     background-image: url(/images/mybg.svg),url(/images/mybg.png);
     background-position-x: right;
-    background-size: auto 100vw;
+    background-size: 100vw auto;
     background-repeat: repeat-y;
   }
   .first-screen-container .first-screen-content .description{
@@ -69,7 +86,7 @@
   .page-container.border-box{
     background-image: url(/images/mybg.svg),url(/images/mybg.png);
     background-position-x: right;
-    background-size: auto 100vw;
+    background-size: auto 100vh;
     background-repeat: repeat-y;
   }
   .first-screen-container .first-screen-content .description{
