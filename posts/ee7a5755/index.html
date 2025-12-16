@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="啓明書簡, AlephBabel, 巴別塔之貓, 個人博客">
+    <meta name="description" content="巴別塔之貓的個人博客, 創作文章歸檔">
+    <meta name="author" content="巴別塔之貓">
+    
+    <title>
+        
+            〈行爲科學統計精要〉筆記 |
+        
+        元巴別書 AlephBabel
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.png">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/regular.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/solid.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/brands.min.css">
+    
+        
+            
+                
+<link rel="stylesheet" href="/css/custom.css">
+
+            
+        
+            
+                
+<link rel="stylesheet" href="/css/font.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"buch.alephbabel.com","root":"/","language":"zh-TW","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#004C99","title":"元巴別書 AlephBabel","author":"巴別塔之貓","avatar":"/images/avatar.jpg","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"Home":"/ || fa-solid fa-home","Archives":"/archives || fa-solid fa-box-archive","Tags":"/tags || fa-solid fa-tags","Categories":"/categories || fa-solid fa-layer-group","About":"/about || fa-solid fa-chalkboard-user"},"first_screen":{"enable":true,"background_img":"/images/bg.png","background_img_dark":"/images/bg.png","description":"欲廣文路  自可淸濁皆通||若賞知音  卽須輕重有異","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":false,"hide_header":false},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"created"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm","copyright_info":{"custom_license":"請参攷本站「關於」頁面的版權聲明．🔗","custom_link":"https://buch.alephbabel.com/about/"},"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null},"img_align":"center"},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":true,"provider":"jsdelivr"},"pjax":{"enable":true},"footer":{"since":2017,"word_count":false,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":["/css/custom.css","/css/font.css"],"js":["/js/jquery.js","/js/custom.js"]},"root":"","source_data":{},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分鐘前","hour":"%s 小時前","day":"%s 天前","week":"%s 周前","month":"%s 個月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"復製代碼","copied":"已復製","fold":"折疊代碼塊","folded":"已折疊"}
+    KEEP.language_copy_copyright = {"copy":"復製許可信息","copied":"已復製","title":"原文標題","author":"原文作者","link":"原文連結"}
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.png">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               元巴別書 AlephBabel
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首䈎
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                歸檔
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                標籤
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                
+                                分類
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-chalkboard-user"></i>
+                                
+                                關於
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首䈎
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            歸檔
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            標籤
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                </span>
+                            
+                            分類
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-chalkboard-user"></i>
+                                </span>
+                            
+                            關於
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        〈行爲科學統計精要〉筆記
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/avatar.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">巴別塔之貓</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2025-01-20 12:00</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Sat Jan 25 2025 13:05:45 GMT+0800">2025-01-25 13:05</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/%E6%95%B8%E5%AD%B8/">數學</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E7%B5%B1%E8%A8%88%E5%AD%B8/">統計學</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>1.5k 字數</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>4 分鐘</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h2 id="第01章-統計學入門"><a href="#第01章-統計學入門" class="headerlink" title="第01章　統計學入門"></a>第01章　統計學入門</h2><h4 id="1-1-相關概念"><a href="#1-1-相關概念" class="headerlink" title="1.1 相關概念"></a>1.1 相關概念</h4><p><strong>統計</strong>指的是一套組織、總結和解釋信息的數學過程．</p>
+<p><strong>總體</strong>是特定研究中所關注的所有個體的集合．</p>
+<p><strong>樣本</strong>是從總體中選擇的一組個體，通常用於代表研究中的總體．在<strong>隨機抽樣</strong>中，總體中的每個個體都有均等的機會被選中．</p>
+<p><strong>變量</strong>是對於不同個體會有變化或不同值的特徵或情況．</p>
+<p><strong>數據</strong>是測量或觀察所得的結果．一個<strong>數據集</strong>是一系列測量或觀察的結果．一個<strong>數據</strong>是一個單獨測量或觀察的結果，通常稱爲<strong>分數</strong>或<strong>原始分數</strong>．</p>
+<p><strong>參數</strong>是一個值，通常是一個描述總體的數值．參數通常來自對總體中個體的測量．</p>
+<p><strong>統計量</strong>是一個值，通常是一個描述樣本的數值．統計量來源於對樣本中個體的測量．</p>
+<p><strong>描述統計</strong>適用於概括、整理和簡化數據的統計方法．</p>
+<p><strong>推論統計</strong>是使用研究樣本，對樣本所來自的總體作出推論的技術．</p>
+<p><strong>抽樣誤差</strong>是樣本統計量和相應的總體參數之間存在的誤差．</p>
+<p><strong>構念</strong>又稱假設構念，不能被直接觀察到的內部特質，但是對描述和解釋行爲有用．</p>
+<p><strong>操作定義</strong>是定義一個用於測量外部行爲的測量過程（一系列操作），並將測量結果作為假設構念的定義．</p>
+<p><strong>離散變量</strong>由獨立的、不可分割的類別組成，相鄰的類別之間不存在其它任何值．</p>
+<p><strong>連續變量</strong>是在任意兩個觀察值之間有無限多的可能值．一個連續變量可以被分割成無限多的小片段．</p>
+<p><strong>精確界線</strong>是在連續數軸尚表示的分數的間隔邊界．兩個相鄰分數的精確界線恰好位於分數的中間．每個分數都有兩個精確界線．<strong>精確上限</strong>在區間的頂部，<strong>精確下限</strong>在區間的底部．</p>
+<p><strong>測量尺度</strong>以四種形式（或四種類型）出現：<strong>定類尺度</strong>（稱名量表）、<strong>定序尺度</strong>（順序量表）、<strong>定距尺度</strong>（等距量表）和<strong>定比尺度</strong>（等比量表）．一個<strong>定類尺度</strong>包括一些不同名稱的種類，它們沒有任何數量上的區別．<strong>定序尺度</strong>由一系列遵循一定順序的類別組成，它們有大小或數量上的排序差別．<strong>定距尺度</strong>由間距大小相等的有順序的類別組成，其數值間相等的差異反映了大小上相等的差異，但是定距尺度的零點是任意的，並不表示測量值的量爲0．<strong>定比尺度</strong>是在定距尺度的基礎上具有絕對零點的測量尺度．在定比量表中，數值的比率反映了大小的比率．</p>
+<h4 id="1-2-數據結構"><a href="#1-2-數據結構" class="headerlink" title="1.2 數據結構"></a>1.2 數據結構</h4><p><strong>數據結構1　測量每個個體的一個或多個獨立的變量：描述性研究</strong></p>
+<p>只是簡單地描述自然存在的個體變量．例如，描述一群大學生的飲食、睡眠和學習習慣的調查．研究目標是單獨描述每個變量，而不關心變量之間的關係，這類研究就是描述性研究．</p>
+<p><strong>數據結構2　測量每個個體的兩個變量：相關法</strong></p>
+<p>例如，研究結果發現，社交媒體的使用時長和學習成績有關，這種關係對於大一新生尤爲明顯．通過將社交媒體使用時長的分數和學習成績的分數以圖表的形式呈現時，能夠清晰地表現兩者之間的關係，這就是相關法．</p>
+<p>相關研究的結果可以說明兩個變量之間的關係，但是不能爲這種關係提供解釋．特別是，相關研究不能說明因果關係，比如存在產生這種關係的第三個變量．</p>
+<p><strong>數據結構3　比較兩組（或多組）的分數：實驗法和非實驗法</strong></p>
+<p>實驗法可以解釋因果關係．實驗法有兩個顯著的特點——<strong>操縱</strong>和<strong>控制</strong>．操縱指的是通過改變變量值的水平．控制包括控制<strong>環境變量</strong>和<strong>被試變量</strong>．實驗者操縱的變量稱爲<strong>自變量</strong>，而通過通過觀察得到的，用以評估處理效應的變量稱爲<strong>因變量</strong>．因變量是在實驗中測量的變量，其值的變化取決於自變量的狀態．通常，一項研究會含有<strong>控制組</strong>，即被試不接受任何處理的情況．不接受處理的組叫作控制組，接受處理的組叫作<strong>實驗組</strong>．不過，控制組的被試會接受一種中性或者安慰性的處理．控制組的作用是提供比較實驗處理的基綫．</p>
+<p>非實驗法包括<strong>非等效組研究</strong>和<strong>前後測研究</strong>．</p>
+<p>非等效研究比較現有的群體，研究者無法控制參與者分配給哪個組，也無法保證每個組人數相等．這種類型的研究部署真正的實驗．</p>
+<p>前後測研究利用時間的推移（前&#x2F;後）創建分數組．在前後測研究中，研究人員也無法控制其它隨時間變化的變量．這項研究也不是真正的實驗．在非實驗研究中，用於創建組的變量是自變量，每組的測量分數是因變量．因爲非實驗研究中，自變量不受操縱，所以非實驗研究中的「自變量」通常稱爲<strong>準自變量</strong>．</p>
+
+                    
+                </div>
+
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                〈行爲科學統計精要〉筆記
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                posts/ee7a5755/
+            </div>
+        </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    作者
+                </div>
+                <div class="content">巴別塔之貓</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    發布於
+                </div>
+                <div class="content">2025-01-20 12:00</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    © 版權信息
+                </div>
+                <div class="content tooltip" data-tooltip-content="">
+                    <a href="https://buch.alephbabel.com/about/" target="_blank">
+                        
+                            請参攷本站「關於」頁面的版權聲明．🔗
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="復製許可信息" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E7%B5%B1%E8%A8%88%E5%AD%B8/">統計學</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/posts/37d90133/"
+                                   title="「中古漢語萬叶牌」卓遊規則"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">「中古漢語萬叶牌」卓遊規則</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/posts/ae852a75/"
+                                   title="四類形式語法小述"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">四類形式語法小述</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC01%E7%AB%A0-%E7%B5%B1%E8%A8%88%E5%AD%B8%E5%85%A5%E9%96%80"><span class="nav-text">第01章　統計學入門</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-%E7%9B%B8%E9%97%9C%E6%A6%82%E5%BF%B5"><span class="nav-text">1.1 相關概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-%E6%95%B8%E6%93%9A%E7%B5%90%E6%A7%8B"><span class="nav-text">1.2 數據結構</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;<span>2017</span>&nbsp;-&nbsp;2025
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">巴別塔之貓</a>
+        
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+            本站由 <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="/images/brands/github.png"></span> 提供部署服務
+            
+        </div>
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">讀者</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">閱覽</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜尋..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC01%E7%AB%A0-%E7%B5%B1%E8%A8%88%E5%AD%B8%E5%85%A5%E9%96%80"><span class="nav-text">第01章　統計學入門</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-%E7%9B%B8%E9%97%9C%E6%A6%82%E5%BF%B5"><span class="nav-text">1.1 相關概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-%E6%95%B8%E6%93%9A%E7%B5%90%E6%A7%8B"><span class="nav-text">1.2 數據結構</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/toggle-theme.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/code-block.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/libs/anime.min.js"></script>
+
+<!-- local search -->
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/local-search.js"></script>
+
+
+<!-- lazyload -->
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/lazyload.js"></script>
+
+
+<div class="pjax">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/post/post-helper.js"></script>
+
+        <!-- toc -->
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/post/toc.js"></script>
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+    
+        
+            
+<script class="custom-inject-js" src="/js/jquery.js" data-pjax></script>
+
+        
+    
+        
+            
+<script class="custom-inject-js" src="/js/custom.js" data-pjax></script>
+
+        
+    
+
+</body>
+</html>

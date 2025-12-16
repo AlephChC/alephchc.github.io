@@ -1,0 +1,18 @@
+@font-face {
+   font-family: 'customfont';
+   src: url('../font/Kinryo.ttf') format('truetype'),
+        url('../font/Kinryo.woff') format('woff'),
+        url('../font/Kinryo.woff2') format('woff2');
+}
+
+/*@font-face {
+   font-family: 'paraChinfont';
+   src: url('../font/YunlinSans.otf') format('opentype');
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'paraChinfont';
+   src: url('../font/YunlinSansB.otf') format('opentype');
+   font-weight: 600;*/
+}
