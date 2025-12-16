@@ -1,6 +1,6 @@
 @font-face {
    font-family: 'customfont';
-   src: url('../font/Kinryo.ttf') format('truetype'),
+   src: url('../font/Kinryo.otf') format('opentype'),
         url('../font/Kinryo.woff') format('woff'),
         url('../font/Kinryo.woff2') format('woff2');
 }
