@@ -8,7 +8,7 @@ if (!window.CUSTOM_CURSOR_LOADED) {
             var x = e.pageX,
             y = e.pageY;
             $i.css({
-                "z-index": 8,
+                "z-index": 2147483647,
                 "top": y - 20,
                 "left": x,
                 "position": "absolute",

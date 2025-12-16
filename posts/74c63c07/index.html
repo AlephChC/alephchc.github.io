@@ -306,7 +306,7 @@
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Tue Dec 16 2025 18:07:30 GMT+0800">2025-12-16 18:07</span>
+                    <span class="datetime" data-updated="Tue Dec 16 2025 20:48:54 GMT+0800">2025-12-16 20:48</span>
                 </span>
             
         
@@ -326,10 +326,10 @@
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%8E%9F%E5%89%B5/">原創</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E7%B6%B2%E7%AB%99/">網站</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E7%B6%B2%E7%AB%99/">網站</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%8E%9F%E5%89%B5/">原創</a></li>
                         
                     
                             <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%8A%80%E8%A1%93%E8%A8%98%E9%8C%84/">技術記錄</a></li>
@@ -371,10 +371,10 @@
                     
                          <p>首先開始安裝Jekyll的Ruby依賴（macOS自帶Ruby，但據說不太好用）．選擇最新版Ruby 3.4.4，報錯，發現是依賴的路徑不對，但能找到依賴已安裝．最後排查出來，我的homebrew是Intel芯片時代系統遷移過來的X86_64構架，產生安裝目錄問題．</p>
 <p>於是安裝Arm版Homebrew與Ruby 3.4.4．最後開始安裝bundle和Jekyll，報錯，提示版本問題，導致依賴有問題．</p>
-<p>最後查詢得知Github Page的Jekyll僅支持3.10以下的版本，對應的Ruby只能2.7版本．開始重新安裝Ruby 2.7.8，繼續報錯，因為這過氣版本的opensll 1.1依賴已經停止支持，無法安裝．隨後開始編譯opensll 1.1，成功．寫入opensll1.1的路徑給Ruby 2.7.8，安裝成功．</p>
-<p>繼續安裝bundle，發現依賴無法下載，換鏡像源為清華源，無效，最後發現在網站配置文件寫入了源為官方源，優先級高，對其刪除修改．然後解決Ruby版本衝突後，本地部署Jekyll成功．</p>
-<p>開始做Github Page，新建項目倉庫，才知道現在上傳已不支持密碼，然後生成密鑰，上傳網站成功．發現網址被替換，我的主站<code>[user].github.io</code>已配置解析為CF自定義域名<code>www.example.com</code>，故<code>[user].github.io/repo/</code>會自動跳轉<code>www.example.com/repo/</code>，這不是我想要的結果．</p>
-<p>通過在CF後台增加記錄，將<code>www.example.com</code>解析成<code>test.example.com</code>，在repo的Page配置處指向<code>test.example.com</code>，消除<code>/repo/</code>目錄痕跡為域名形式．</p>
+<p>最後查詢得知Github Page的Jekyll僅支持3.10以下的版本，對應的Ruby只能2.7版本．開始重新安裝Ruby 2.7.8，繼續報錯，因爲這過氣版本的opensll 1.1依賴已經停止支持，無法安裝．隨後開始編譯opensll 1.1，成功．寫入opensll1.1的路徑給Ruby 2.7.8，安裝成功．</p>
+<p>繼續安裝bundle，發現依賴無法下載，換鏡像源爲清華源，無效，最後發現在網站配置文件寫入了源爲官方源，優先級高，對其刪除修改．然後解決Ruby版本衝突後，本地部署Jekyll成功．</p>
+<p>開始做Github Page，新建項目倉庫，才知道現在上傳已不支持密碼，然後生成密鑰，上傳網站成功．發現網址被替換，我的主站<code>[user].github.io</code>已配置解析爲CF自定義域名<code>www.example.com</code>，故<code>[user].github.io/repo/</code>會自動跳轉<code>www.example.com/repo/</code>，這不是我想要的結果．</p>
+<p>通過在CF後台增加記錄，將<code>www.example.com</code>解析成<code>test.example.com</code>，在repo的Page配置處指向<code>test.example.com</code>，消除<code>/repo/</code>目錄痕跡爲域名形式．</p>
 <p>總結，如無必要，請不要使用Jekyll網站模板，會變得不幸（當前站點不使用Jekyll生成）．</p>
 
                     
@@ -439,11 +439,11 @@
                             <ul class="post-tags-box border-box">
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%8E%9F%E5%89%B5/">原創</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E7%B6%B2%E7%AB%99/">網站</a>
                                     </li>
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E7%B6%B2%E7%AB%99/">網站</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%8E%9F%E5%89%B5/">原創</a>
                                     </li>
                                 
                                     <li class="tag-item border-box">
@@ -660,33 +660,177 @@
 
     <!-- local search -->
     
-        <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-          <span class="search-input-field-pre">
-            <i class="fas fa-keyboard"></i>
-          </span>
-            <div class="search-input-container">
-                <input autocomplete="off"
-                       autocorrect="off"
-                       autocapitalize="off"
-                       placeholder="搜尋..."
-                       spellcheck="false"
-                       type="search"
-                       class="search-input"
-                >
-            </div>
-            <span class="close-popup-btn">
-                <i class="fas fa-times"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
+        $icon-size = 1.2rem
+$search-header-height = 3rem
+
+.search-pop-overlay {
+  position fixed
+  top 0
+  left 0
+  z-index $z-index-8
+  display flex
+  width 100%
+  height 100%
+  background rgba(0, 0, 0, 0)
+  visibility hidden
+  transition-t("visibility, background", "0, 0", "0.3, 0.3", "ease, ease")
+
+  &.active {
+    background rgba(0, 0, 0, 0.35)
+    visibility visible
+
+    .search-popup {
+      transform scale(1)
+    }
+  }
+
+
+  .search-popup {
+    z-index $z-index-6
+    width 70%
+    height 80%
+    margin auto
+    background var(--background-color-1)
+    border-radius 0.4rem
+    transform scale(0)
+    transition-t("transform", "0", "0.3", "ease")
+
+    +keep-tablet() {
+      width 80%
+    }
+
+    +keep-mobile() {
+      width 90%
+    }
+
+    .search-header {
+      display flex
+      align-items center
+      height $search-header-height
+      padding 0 1rem
+      background var(--text-color-6)
+      border-top-left-radius 0.2rem
+      border-top-right-radius 0.2rem
+
+      .search-input-field-pre {
+        margin-right 0.2rem
+        color var(--text-color-3)
+        font-size 1.3rem
+        cursor pointer
+      }
+
+      .search-input-container {
+        flex-grow 1
+        padding 0.2rem
+
+        .search-input {
+          width 100%
+          color var(--text-color-3)
+          font-size 1.2rem
+          background transparent
+          border 0
+          outline 0
+
+          &::-webkit-search-cancel-button {
+            display none
+          }
+
+          &::-webkit-input-placeholder {
+            color var(--text-color-4)
+            font-size 1rem
+          }
+        }
+      }
+
+
+      .close-popup-btn {
+        color var(--text-color-3)
+        font-size $icon-size
+        cursor pointer
+
+        &:hover {
+          color var(--text-color-1)
+        }
+      }
+    }
+
+
+    #search-result {
+      position relative
+      display flex
+      box-sizing border-box
+      height 'calc(100% - %s)' % $search-header-height
+      padding 0.3rem 1.5rem
+      overflow auto
+
+      .search-result-list {
+        width 100%
+        height 100%
+        font-size 1rem
+
+        li {
+          box-sizing border-box
+          margin 0.8rem 0
+          padding 0.8rem 0
+          border-bottom 0.1rem dashed var(--border-color)
+
+          &:last-child {
+            border-bottom none
+          }
+
+
+          .search-result-title {
+            position relative
+            display flex
+            align-items center
+            margin-bottom 0.8rem
+            padding-left 1rem
+            font-weight bold
+
+            &::after {
+              position absolute
+              top 50%
+              left 0
+              width 0.4rem
+              height 0.4rem
+              background var(--text-color-3)
+              border-radius 50%
+              transform translateY(-50%)
+              content ''
+            }
+          }
+
+
+          .search-result {
+            margin 0
+            padding-left 1rem
+            line-height 2rem
+            word-wrap break-word
+          }
+
+          a {
+            &:hover {
+              color var(--text-color-3)
+            }
+          }
+
+          .search-keyword {
+            color var(--primary-color)
+            font-weight bold
+            border-bottom 0.1rem dashed var(--primary-color)
+          }
+        }
+      }
+
+
+      #no-result {
+        margin auto
+        color var(--text-color-4)
+      }
+    }
+  }
+}
+
 
     
 
