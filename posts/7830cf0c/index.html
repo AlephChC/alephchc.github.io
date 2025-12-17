@@ -354,9 +354,6 @@
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%8E%9F%E5%89%B5/">原創</a></li>
-                        
-                    
                             <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E8%AA%9E%E9%9F%B3%E5%AD%B8/">語音學</a></li>
                         
                     
@@ -364,6 +361,9 @@
                         
                     
                             <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%AD%B7%E5%8F%B2%E8%AA%9E%E8%A8%80%E5%AD%B8/">歷史語言學</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%8E%9F%E5%89%B5/">原創</a></li>
                         
                     
                 </ul>
@@ -400,10 +400,8 @@
                     
 
                     
-                         <h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
-<p>關於語言現象的系列視頻科普，不定期更新，歡迎觀看．</p>
-<h1 id="episode-i-assimilation"><a class="markdownIt-Anchor" href="#episode-i-assimilation"></a> Episode I – Assimilation</h1>
-  <style>.embed-container {
+                         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>關於語言現象的系列視頻科普，不定期更新，歡迎觀看．</p>
+<h1 id="Episode-I-–-Assimilation"><a href="#Episode-I-–-Assimilation" class="headerlink" title="Episode I – Assimilation"></a>Episode I – Assimilation</h1>  <style>.embed-container {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
@@ -482,10 +480,6 @@
                             <ul class="post-tags-box border-box">
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%8E%9F%E5%89%B5/">原創</a>
-                                    </li>
-                                
-                                    <li class="tag-item border-box">
                                         <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E8%AA%9E%E9%9F%B3%E5%AD%B8/">語音學</a>
                                     </li>
                                 
@@ -495,6 +489,10 @@
                                 
                                     <li class="tag-item border-box">
                                         <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E6%AD%B7%E5%8F%B2%E8%AA%9E%E8%A8%80%E5%AD%B8/">歷史語言學</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%8E%9F%E5%89%B5/">原創</a>
                                     </li>
                                 
                             </ul>
@@ -546,7 +544,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text"> 前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#episode-i-assimilation"><span class="nav-text"> Episode I – Assimilation</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Episode-I-%E2%80%93-Assimilation"><span class="nav-text">Episode I – Assimilation</span></a></li></ol>
     </div>
 </div>
 
@@ -691,33 +689,177 @@
 
     <!-- local search -->
     
-        <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-          <span class="search-input-field-pre">
-            <i class="fas fa-keyboard"></i>
-          </span>
-            <div class="search-input-container">
-                <input autocomplete="off"
-                       autocorrect="off"
-                       autocapitalize="off"
-                       placeholder="搜尋..."
-                       spellcheck="false"
-                       type="search"
-                       class="search-input"
-                >
-            </div>
-            <span class="close-popup-btn">
-                <i class="fas fa-times"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
+        $icon-size = 1.2rem
+$search-header-height = 3rem
+
+.search-pop-overlay {
+  position fixed
+  top 0
+  left 0
+  z-index $z-index-8
+  display flex
+  width 100%
+  height 100%
+  background rgba(0, 0, 0, 0)
+  visibility hidden
+  transition-t("visibility, background", "0, 0", "0.3, 0.3", "ease, ease")
+
+  &.active {
+    background rgba(0, 0, 0, 0.35)
+    visibility visible
+
+    .search-popup {
+      transform scale(1)
+    }
+  }
+
+
+  .search-popup {
+    z-index $z-index-6
+    width 70%
+    height 80%
+    margin auto
+    background var(--background-color-1)
+    border-radius 0.4rem
+    transform scale(0)
+    transition-t("transform", "0", "0.3", "ease")
+
+    +keep-tablet() {
+      width 80%
+    }
+
+    +keep-mobile() {
+      width 90%
+    }
+
+    .search-header {
+      display flex
+      align-items center
+      height $search-header-height
+      padding 0 1rem
+      background var(--text-color-6)
+      border-top-left-radius 0.2rem
+      border-top-right-radius 0.2rem
+
+      .search-input-field-pre {
+        margin-right 0.2rem
+        color var(--text-color-3)
+        font-size 1.3rem
+        cursor pointer
+      }
+
+      .search-input-container {
+        flex-grow 1
+        padding 0.2rem
+
+        .search-input {
+          width 100%
+          color var(--text-color-3)
+          font-size 1.2rem
+          background transparent
+          border 0
+          outline 0
+
+          &::-webkit-search-cancel-button {
+            display none
+          }
+
+          &::-webkit-input-placeholder {
+            color var(--text-color-4)
+            font-size 1rem
+          }
+        }
+      }
+
+
+      .close-popup-btn {
+        color var(--text-color-3)
+        font-size $icon-size
+        cursor pointer
+
+        &:hover {
+          color var(--text-color-1)
+        }
+      }
+    }
+
+
+    #search-result {
+      position relative
+      display flex
+      box-sizing border-box
+      height 'calc(100% - %s)' % $search-header-height
+      padding 0.3rem 1.5rem
+      overflow auto
+
+      .search-result-list {
+        width 100%
+        height 100%
+        font-size 1rem
+
+        li {
+          box-sizing border-box
+          margin 0.8rem 0
+          padding 0.8rem 0
+          border-bottom 0.1rem dashed var(--border-color)
+
+          &:last-child {
+            border-bottom none
+          }
+
+
+          .search-result-title {
+            position relative
+            display flex
+            align-items center
+            margin-bottom 0.8rem
+            padding-left 1rem
+            font-weight bold
+
+            &::after {
+              position absolute
+              top 50%
+              left 0
+              width 0.4rem
+              height 0.4rem
+              background var(--text-color-3)
+              border-radius 50%
+              transform translateY(-50%)
+              content ''
+            }
+          }
+
+
+          .search-result {
+            margin 0
+            padding-left 1rem
+            line-height 2rem
+            word-wrap break-word
+          }
+
+          a {
+            &:hover {
+              color var(--text-color-3)
+            }
+          }
+
+          .search-keyword {
+            color var(--primary-color)
+            font-weight bold
+            border-bottom 0.1rem dashed var(--primary-color)
+          }
+        }
+      }
+
+
+      #no-result {
+        margin auto
+        color var(--text-color-4)
+      }
+    }
+  }
+}
+
 
     
 
@@ -727,7 +869,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text"> 前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#episode-i-assimilation"><span class="nav-text"> Episode I – Assimilation</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Episode-I-%E2%80%93-Assimilation"><span class="nav-text">Episode I – Assimilation</span></a></li></ol>
     </div>
 </div>
 

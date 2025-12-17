@@ -265,3 +265,7 @@ code{
 .hr hr{
   width: 65%;
 }
+
+.home-content-container{
+  background: rgba(214, 210, 204, 0.85);
+}
