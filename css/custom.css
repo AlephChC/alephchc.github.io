@@ -237,7 +237,7 @@ code{
   border: none;
 }
 
-.page-template-bottom.border-box > :first-child{
+.page-template-bottom.border-box > ul:first-of-type{
   display: none;
 }
 
