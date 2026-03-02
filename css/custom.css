@@ -82,6 +82,7 @@
   }
 }
 
+
 @media (max-width: 950px) {
   .page-container.border-box{
     background-image: url(/images/mybg.svg),url(/images/mybg.png);
@@ -162,7 +163,6 @@
 	padding: 2rem 1rem 1rem 1rem;
 	margin-left: 2rem;
   box-shadow: 0 0 8px var(--shadow-hover-color);
-  height: 100%;
 }
 
 .side-tools{
@@ -171,6 +171,7 @@
 
 h1{
   text-align: center;
+  justify-content: flex-start!important;
 }
 
 .headerlink{
@@ -182,8 +183,13 @@ p{
   text-align: justify!important;
 }
 
-h2, h3, h4{
+h2, h3, h4, h5, h6{
   border: none!important;
+  justify-content: flex-start!important;
+}
+
+h2{
+  text-align: center;
 }
 
 .tag-page-container .tag-list-content .tag-list .tag-list-item .tag-list-link{
@@ -220,8 +226,9 @@ h2, h3, h4{
 }
 
 code{
-  border: none;
+  border: 1px solid #EEEEEE;
   padding: 0.1rem 0.2rem;
+  background-color: rgba(255, 250, 249, 0.4);
 }
 
 .page-content.border-box.keep-markdown-body h3{
@@ -315,7 +322,9 @@ code{
 }
 
 
-
+.post-content-container.border-box{
+  margin-bottom: 0!important;
+}
 
 .home-content-container{
   background: rgba(214, 210, 204, 0.85);
@@ -327,4 +336,12 @@ code{
 
 #rt{
   float: right;
+}
+
+.aboutava{
+  width: 7rem;
+}
+
+.about-top.links{
+  width: 100%;
 }
