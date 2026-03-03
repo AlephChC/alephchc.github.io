@@ -9,7 +9,7 @@
     --first-screen-font-size: 3.5rem;
     --post-title-align: center;
     --first-screen-font-family: 'customfont';
-    --base-font-family: Optima-Regular, Optima, Arial, 'Yunlin Sans', 'Source Han Sans K', 'Heiti SC Light', 'STXihei', 'DengXian', 'PingFang SC Light', 'Microsoft YaHei', sans-serif;
+    --base-font-family: Optima-Regular, Optima, 'SF Pro Display', Avenir, 'Segoe UI', Arial, 'Yunlin Sans', 'Source Han Sans K', 'PingFang TC Regular', 'Microsoft YaHei', sans-serif;
     --page-content-width: 85%;
 }
 
@@ -193,7 +193,7 @@ h2{
 }
 
 .tag-page-container .tag-list-content .tag-list .tag-list-item .tag-list-link{
-  background-color: rgba(247, 247, 247, 0.7)!important;
+  background-color: rgba(253, 253, 253, 0.9);
 }
 
 .tag-page-container .tag-list-content .tag-list .tag-list-item .tag-list-count{
@@ -496,4 +496,8 @@ li#tab2{
   margin-bottom: 0;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+}
+
+.header-wrapper .header-content{
+  max-width: var(--page-content-max-width-2)!important;
 }
