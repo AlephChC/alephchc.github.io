@@ -252,7 +252,7 @@ code{
   font-size: 0.9rem;
 }
 
-.links p{
+.links p, .moments p{
   text-align: center!important;
   text-indent: unset;
 }
@@ -340,12 +340,61 @@ code{
 
 .aboutava{
   width: 7rem;
+  border: 0.2rem solid transparent;
+  background: conic-gradient(#FD5353, #F78542, #FFEE49, #1CEFA9, #3399FF, #9966FF, #FD5353) border-box;
+  margin: 0!important;
 }
 
-.about-top.links, .about-top.moments{
+.avahover{
+  width: 7.4rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.avahover:hover {
+  animation: wiggle 1s ease-in-out 1
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    10% {
+        transform: rotate(10deg);
+        scale: 1.2
+    }
+
+    25% {
+        transform: rotate(-10deg);
+        scale: 1.2
+    }
+
+    50% {
+        transform: rotate(20deg);
+        scale: 1.2
+    }
+
+    75% {
+        transform: rotate(-10deg);
+        scale: 1.2
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+.about-top.links{
   width: 100%;
   margin-bottom: 3.5rem;
 }
+
+.about-top.moments{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 
 .bio{
   height: 3rem;
@@ -355,43 +404,51 @@ code{
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .page-content .tabs {
-    box-sizing: border-box;
-    cursor: pointer;
-    list-style: none!important;
-    display: flex;
-    border: 1px solid #eee;
+  box-sizing: border-box;
+  cursor: pointer;
+  list-style: none!important;
+  display: flex;
+  border: 2px solid #eee;
+  border-radius: 8px 8px 0px 0px;
 }
 
 li#tab1, li#tab2 {
-    text-align: center;
-    flex-grow: 1;
-    padding: 10px 30px 2px 30px;
-    border: 1px solid #eee;
-    list-style: none!important;
-    width: 50%;
+  text-align: center;
+  flex-grow: 1;
+  padding: 10px 30px 2px 30px;
+  list-style: none!important;
+  width: 50%;
+}
+
+li#tab1{
+  border-right: 2px solid #eee;
+}
+
+li#tab2{
+  border-left: 2px solid #eee;
 }
 
 .tabs li:hover {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .tabs li::after {
-    content: "";
-    display: block;
-    width: 50%;
-    transform: translateX(50%);
-    height: 3px;
-    background: #d00;
-    opacity: 0;
-    transition: 0.25s ease;
+  content: "";
+  display: block;
+  width: 50%;
+  transform: translateX(50%);
+  height: 3px;
+  background: #F78542;
+  opacity: 0;
+  transition: 0.25s ease;
 }
 
 .tabs li.checked::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 #like{
@@ -406,16 +463,37 @@ li#tab1, li#tab2 {
   padding: 2rem 1rem;
   border: 2px solid #eee;
   box-sizing: border-box;
+  border-radius: 0px 0px 8px 8px;
 }
+
+#short-posts{
+  padding: 2rem 2rem;
+  border: 2px solid #eee;
+  box-sizing: border-box;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.short-post-list p{
+  text-indent: 0;
+  margin-top: 0.2rem!important;
+}
+
+.short-post-list h3{
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
 
 .moments~p{
   text-indent: 0;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+  margin-top: 0.2rem!important;
 }
 
 .moments~h3{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  margin-bottom: 0;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
