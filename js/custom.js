@@ -17,7 +17,7 @@ if (!window.CUSTOM_CURSOR_LOADED) {
                 "color": randomColor
                   });
              $("html").append($i);
-             console.log("Sample log");
+             // console.log("Sample log");
              $i.animate({
                 "top": y - 200,
                 "opacity": 0

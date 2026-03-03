@@ -342,6 +342,80 @@ code{
   width: 7rem;
 }
 
-.about-top.links{
+.about-top.links, .about-top.moments{
   width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.bio{
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hide {
+    display: none;
+}
+
+.page-content .tabs {
+    box-sizing: border-box;
+    cursor: pointer;
+    list-style: none!important;
+    display: flex;
+    border: 1px solid #eee;
+}
+
+li#tab1, li#tab2 {
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px 30px 2px 30px;
+    border: 1px solid #eee;
+    list-style: none!important;
+    width: 50%;
+}
+
+.tabs li:hover {
+    background-color: #eee;
+}
+
+.tabs li::after {
+    content: "";
+    display: block;
+    width: 50%;
+    transform: translateX(50%);
+    height: 3px;
+    background: #d00;
+    opacity: 0;
+    transition: 0.25s ease;
+}
+
+.tabs li.checked::after {
+    opacity: 1;
+}
+
+#like{
+  width: 100%;
+}
+
+#like img{
+  margin: 2rem auto;
+}
+
+#about-site{
+  padding: 2rem 1rem;
+  border: 2px solid #eee;
+  box-sizing: border-box;
+}
+
+.moments~p{
+  text-indent: 0;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.moments~h3{
+  font-size: 1.2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }

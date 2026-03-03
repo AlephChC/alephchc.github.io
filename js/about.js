@@ -38,24 +38,72 @@ async function init() {
 
 
 
-  // let tab1 = document.getElementById("tab1");
-  // let tab2 = document.getElementById("tab2");
-  // let div1 = document.getElementById("about-site");
-  // let div2 = document.getElementById("short-posts");
-  // tab1.addEventListener("click", (evt) => {
-  //   div1.classList.remove("hide");
-  //   div2.classList.add("hide");
+  let tab1 = document.getElementById("tab1");
+  let tab2 = document.getElementById("tab2");
+  let div1 = document.getElementById("about-site");
+  let div2 = document.getElementById("short-posts");
+  tab1.addEventListener("click", (evt) => {
+    div1.classList.remove("hide");
+    div2.classList.add("hide");
 
-  //   tab1.classList.add("checked");
-  //   tab2.classList.remove("checked");
-  // });
-  // tab2.addEventListener("click", (evt) => {
-  //   div2.classList.remove("hide");
-  //   div1.classList.add("hide");
+    tab1.classList.add("checked");
+    tab2.classList.remove("checked");
+  });
+  tab2.addEventListener("click", (evt) => {
+    div2.classList.remove("hide");
+    div1.classList.add("hide");
 
-  //   tab2.classList.add("checked");
-  //   tab1.classList.remove("checked");
-  // });
+    tab2.classList.add("checked");
+    tab1.classList.remove("checked");
+  });
+
+
+
+  fetch("../moments/index.html")
+    .then(res => res.text())
+    .then(html => {
+      const parser = new DOMParser();
+      ht = parser.parseFromString(html, "text/html");
+      const h3s = ht.querySelectorAll("h3");
+      if (h3s.length >= 5) {
+        const start = h3s[0];
+        const end = h3s[4]; // 第五個 h1
+        let current = start;
+        let content = "";
+
+        while (current && current !== end) {
+          content += current.outerHTML;
+          current = current.nextElementSibling;
+        }
+        document.getElementById("short-posts").innerHTML = current;
+      } else {
+
+        const container = ht.querySelector(".page-content");
+        const start = ht.querySelector(".about-top.moments");
+
+        let content = "";
+        let current = start.nextElementSibling; // 從 start 之後開始
+        while (current) {
+          content += current.outerHTML;
+          current = current.nextElementSibling;
+        }
+
+
+
+        // const range = ht.createRange();
+        // range.setStartAfter(start);
+        // range.setEndAfter(container.lastElementChild);
+
+        // const fragment = range.cloneContents();
+        // const div = document.createElement("div");
+        // div.appendChild(fragment);
+
+        document.querySelector(".short-post-list").innerHTML = content;
+      }
+    });
+
+
+
 
   // const rss_url = "https://mstdn.social/@en6.rss";
   // const response = await fetch(rss_url);
