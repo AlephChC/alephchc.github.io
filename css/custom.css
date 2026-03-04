@@ -445,6 +445,7 @@ li#tab2{
   background: #F78542;
   opacity: 0;
   transition: 0.25s ease;
+  border-radius: 3px;
 }
 
 .tabs li.checked::after {
