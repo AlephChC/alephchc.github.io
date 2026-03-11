@@ -69,6 +69,11 @@
   background-repeat: repeat-y;
 }
 
+p img{
+  max-width: 82%!important;
+  border-radius: 8px;
+}
+
 
 @media (max-width: 1024px) {
   .page-container.border-box{
@@ -80,6 +85,9 @@
   .first-screen-container .first-screen-content .description{
     font-size: calc(var(--first-screen-font-size) * 0.85);
   }
+  p img{
+  max-width: 85%!important;
+}
 }
 
 
@@ -93,6 +101,9 @@
   .first-screen-container .first-screen-content .description{
     font-size: calc(var(--first-screen-font-size) * 0.7);
   }
+  p img{
+  max-width: 90%!important;
+}
 
 }
 
@@ -107,6 +118,9 @@
   .first-screen-container .first-screen-content .description{
     font-size: calc(var(--first-screen-font-size) * 0.7);
   }
+  p img{
+  max-width: 95%!important;
+}
 
 }
 
@@ -123,6 +137,9 @@
     margin-top: -7.8rem;
     color: black;
   }
+  p img{
+  max-width: 100%!important;
+}
 }
 
 

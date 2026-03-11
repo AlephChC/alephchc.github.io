@@ -52,12 +52,14 @@ function aboutPageHandle() {
       div2.classList.add("hide");
       tab1.classList.add("checked");
       tab2.classList.remove("checked");
+      KEEP.initLazyLoad();
     });
     tab2.addEventListener("click", function(evt) {
       div2.classList.remove("hide");
       div1.classList.add("hide");
       tab2.classList.add("checked");
       tab1.classList.remove("checked");
+      KEEP.initLazyLoad();
     });
   }
 
