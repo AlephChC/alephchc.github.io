@@ -303,10 +303,10 @@ p img{
 
 @media (max-width: 420px) {
     .btm-entry .cate-page-container{
-  font-size: calc(var(--base-font-size) * 0.48)!important;
+  font-size: calc(var(--base-font-size) * 0.46)!important;
 }
   .btm-entry .tag-page-container{
-  font-size: calc(var(--base-font-size) * 0.48)!important;
+  font-size: calc(var(--base-font-size) * 0.46)!important;
 }
 }
 
