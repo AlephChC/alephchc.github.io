@@ -223,30 +223,27 @@ p img{
     box-shadow: none;
     padding-block: 0.2rem;
     padding-inline: 2rem;
-    font-size: 0.5rem;
+    font-size: calc(var(--base-font-size) * 0.55) !important;;
   }
-
-.tag-page-container .tag-list-content .tag-list .tag-list-item .tag-list-link{
-  background-color: rgba(253, 253, 253, 0.9);
-}
 
 .tag-page-container .tag-list-content .tag-list .tag-list-item .tag-list-count{
   background-color: rgba(240, 240, 240, 0.5);
-  padding: 0.1rem 0.2rem;
+  padding: calc(var(--base-font-size) * 0.07) calc(var(--base-font-size) * 0.2);
 }
 
 .rt-tag .tag-page-container .tag-list-content .tag-list {
-  column-gap: 0.55rem;
-  row-gap: 0.6rem;
+  column-gap: calc(var(--base-font-size) * 0.55);
+  row-gap: calc(var(--base-font-size) * 0.6);
 }
 
 .btm-entry .tag-page-container .tag-list-content .tag-list .tag-list-item .tag-list-link{
-  padding: 0.1rem 0.2rem;
+  padding: calc(var(--base-font-size) * 0.07) calc(var(--base-font-size) * 0.2);
+  background-color: rgba(253, 253, 253, 0.9);
   }
 
 .btm-entry .cate-page-container .cate-list-content .cate-list .cate-list-item .cate-list-link{
   background-color: rgba(253, 253, 253, 0.9);
-  padding: 0.1rem 0.2rem;
+  padding: calc(var(--base-font-size) * 0.07) calc(var(--base-font-size) * 0.2);
   display: inline-block;
   color: var(--text-color-3);
 }
@@ -257,8 +254,8 @@ p img{
     flex-wrap: wrap;
     justify-content: flex-start;
     box-sizing: border-box;
-    column-gap: 0.55rem;
-    row-gap: 0.6rem;
+    column-gap: calc(var(--base-font-size) * 0.55);
+    row-gap: calc(var(--base-font-size) * 0.6);
 }
 
 .cate-page-container .cate-list-content .cate-list .cate-list-item {
@@ -270,7 +267,7 @@ p img{
 
 .btm-entry .cate-page-container .cate-list-content .cate-list .cate-list-item .cate-list-count {
     background-color: rgba(240, 240, 240, 0.5);
-    padding: 0.1rem 0.2rem;
+    padding: calc(var(--base-font-size) * 0.07) calc(var(--base-font-size) * 0.2);
     display: inline-block;
     color: var(--text-color-3);
 }
@@ -279,7 +276,7 @@ p img{
     box-shadow: none;
     padding-block: 0.2rem;
     padding-inline: 2rem;
-    font-size: 0.5rem;
+    font-size: calc(var(--base-font-size) * 0.55) !important;;
     box-sizing: border-box;
     margin-bottom: 0px;
     background: var(--content-background-color);
