@@ -223,7 +223,7 @@ p img{
     box-shadow: none;
     padding-block: 0.2rem;
     padding-inline: 2rem;
-    font-size: calc(var(--base-font-size) * 0.55) !important;;
+    font-size: calc(var(--base-font-size) * 0.57) !important;;
   }
 
 .tag-page-container .tag-list-content .tag-list .tag-list-item .tag-list-count{
@@ -276,7 +276,7 @@ p img{
     box-shadow: none;
     padding-block: 0.2rem;
     padding-inline: 2rem;
-    font-size: calc(var(--base-font-size) * 0.55) !important;;
+    font-size: calc(var(--base-font-size) * 0.57) !important;;
     box-sizing: border-box;
     margin-bottom: 0px;
     background: var(--content-background-color);
