@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="元巴別書, AlephBabel, 巴別塔之貓, 個人博客">
+    <meta name="description" content="巴別塔之貓的個人博客, 創作文章歸檔">
+    <meta name="author" content="巴別塔之貓">
+    
+    <title>
+        
+            OpenType字體特性小釋 |
+        
+        元巴別書 AlephBabel
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.png">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/regular.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/solid.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/brands.min.css">
+    
+        
+            
+                
+<link rel="stylesheet" href="/css/custom.css">
+
+            
+        
+            
+                
+<link rel="stylesheet" href="/css/font.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"buch.alephbabel.com","root":"/","language":"zh-TW","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#004C99","title":"元巴別書 AlephBabel","author":"巴別塔之貓","avatar":"/images/avatar.jpg","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"Home":"/ || fa-solid fa-home","Archives":"/archives || fa-solid fa-box-archive","About":"/about || fa-solid fa-chalkboard-user"},"first_screen":{"enable":true,"background_img":"/images/bg.png","background_img_dark":"/images/bg.png","description":"欲廣文路  自可淸濁皆通||若賞知音  卽須輕重有異","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":false,"hide_header":false},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"created"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm","copyright_info":{"custom_license":"請参攷本站「關於」頁面的版權聲明．🔗","custom_link":"https://buch.alephbabel.com/about/"},"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null},"img_align":"center"},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":true,"provider":"jsdelivr"},"pjax":{"enable":true},"footer":{"since":2017,"word_count":false,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":["/css/custom.css","/css/font.css"],"js":["/js/jquery.js","/js/custom.js","/js/about.js"]},"root":"","source_data":{"links":[{"title":null},{"name":null,"link":null,"description":null,"avatar":null}]},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分鐘前","hour":"%s 小時前","day":"%s 天前","week":"%s 周前","month":"%s 個月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"復製代碼","copied":"已復製","fold":"折疊代碼塊","folded":"已折疊"}
+    KEEP.language_copy_copyright = {"copy":"復製許可信息","copied":"已復製","title":"原文標題","author":"原文作者","link":"原文連結"}
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.png">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               元巴別書 AlephBabel
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首䈎
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                歸檔
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-chalkboard-user"></i>
+                                
+                                關於
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首䈎
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            歸檔
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-chalkboard-user"></i>
+                                </span>
+                            
+                            關於
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        OpenType字體特性小釋
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/avatar.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">巴別塔之貓</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2020-04-09 22:30</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Tue Oct 20 2026 22:26:53 GMT+0800">2026-10-20 22:26</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8%E8%88%87%E6%8A%80%E8%A1%93/">計算機科學與技術</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%8E%9F%E5%89%B5/">原創</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%8A%80%E8%A1%93/">技術</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>2.2k 字數</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>8 分鐘</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h2 id="一-OpenType與TrueType的歷史"><a href="#一-OpenType與TrueType的歷史" class="headerlink" title="一　OpenType與TrueType的歷史"></a>一　OpenType與TrueType的歷史</h2><p>歷史上，Adobe公司首先推出了PostScript字體，後Apple公司和Microsoft公司由於商業競爭而合作開發了TrueType字體格式，並獲得廣泛的使用。後Adobe又聯合Microsoft公司繼承PostScript字體、開發了以類似於TrueType格式編碼的OpenType字體．</p>
+<p>後來OpenType成爲了ISO（國際標準化組織）的一項公開標準，此標準在2007年3月以ISO&#x2F;IEC 14496-22發佈．</p>
+<p>我們這裏只談及這兩者格式的字體，當然實際上還有諸如Type 1，Type 2，Woff，Eof等其他字體格式．</p>
+<h2 id="二-OpenType與TrueType字體的內部構造"><a href="#二-OpenType與TrueType字體的內部構造" class="headerlink" title="二　OpenType與TrueType字體的內部構造"></a>二　OpenType與TrueType字體的內部構造</h2><p>其實字體（本文僅就OpenType與TrueType字體進行討論）本身由多張信息表描述，如base，cmap，GPOS，GSUB，vmtx，hmtx，name……等．該表的本質是十六進制字符串，我們通過ttx等工具可以將字體文件中的表翻譯成對應的以xml格式排版的信息表．</p>
+<p>而OpenType與TrueType字體我們一般認爲有三種類型：</p>
+<p>一種是純粹的TrueType字體，其不含CFF表（用於描述字形輪廓，下同），而含有glyf表（用於描述字形輪廓，下同），且不包含相關的OpenType特性；</p>
+<p>另一種是純粹的Opentype字體，其含CFF表（Compact Font Format table，壓縮字體格式表），但不含glyf表（Glyph Data table，字形數據表），可以包含相關的OpenType特性；</p>
+<p>而第三種是包含OpenType特性的TrueType字體，其不含CFF表，而含有glyf表，可以包含相關的OpenType特性，且通常仍被叫做TrueType字體．</p>
+<p>CFF和glyf表的區別在於，他們對字形曲綫的定義不同，CFF表繼承自Adobe的CFF字體，使用的是三次貝塞爾曲綫（Bézier curve），又叫PS（PostScript）曲綫或者CFF曲綫，而glyf使用的是兩次貝塞爾曲綫（Bézier curve），又叫TT（TrueType）曲綫．誠然，二次曲綫是一種TrueType時代爲了便於渲染的歷史遺留，但也是當時Apple和Microsoft为了和Adobe使用PostScript的Type 1字體相競爭而提出的格式，是當時一个用來競爭的商業「賣點」．</p>
+<h2 id="三-OpenType特性簡介"><a href="#三-OpenType特性簡介" class="headerlink" title="三　OpenType特性簡介"></a>三　OpenType特性簡介</h2><p>OpenType有很多的特性是有預定義的，且他們主要被寫在字體文件所包含的GPOS和GSUB表中，但是在不同的字體設計軟件中其表現的形式未必遵循字體內部本應有的邏輯．</p>
+<p>在GPOS表中主要存儲的是諸如針對不同的文本上下文（context）環境或者輸入模式對所需要定義的文件進行位置上的偏移與調整，而GSUB文件主要是用來針對当前所输入字符對上下文文本環境或者輸入模式對該字符進行替換字形（glyph）的操作，當然，在某些條件下，兩者可以同時對同一個字形（glyph）進行變換，但是有可能在不同的文本處理軟件上表現不一致甚至出錯．</p>
+<h2 id="四-OpenType特性查看與簡單修改"><a href="#四-OpenType特性查看與簡單修改" class="headerlink" title="四　OpenType特性查看與簡單修改"></a>四　OpenType特性查看與簡單修改</h2><p>由於商業原因，各大商業字體公司專門的字體設計GUI軟件都是不公開的，而一些民間普遍使用的字體製作與編輯軟件實際上其對於OpenType屬性這塊的支持是不夠完善的，只能小範圍修改，從頭開始搭建一個大字符集字體的OpenType特性比較麻煩且費時．</p>
+<p>我們下文就以High-Logic FontCreator這款軟件爲視角進行說明．</p>
+<p>首先，我們需要利用相關工具查看字體文件中的字形順序表（GlyphOrder）．字形順序表包含了一個字體文件中每個字體的name和id信息．而name的命名主要有三種．</p>
+<p>其一是冠以「cid」的標識，譬如人爲假定，「+」「×」兩個字符，他們的name爲「cid00001」「cid00003」；</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">GlyphOrder</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- The &#x27;id&#x27; attribute is only for humans; it is ignored when parsed. --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;0&quot;</span> <span class="attr">name</span>=<span class="string">&quot;.notdef&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;1&quot;</span> <span class="attr">name</span>=<span class="string">&quot;cid00001&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;2&quot;</span> <span class="attr">name</span>=<span class="string">&quot;cid00002&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;3&quot;</span> <span class="attr">name</span>=<span class="string">&quot;cid00003&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;4&quot;</span> <span class="attr">name</span>=<span class="string">&quot;cid00004&quot;</span>/&gt;</span></span><br><span class="line">	......</span><br><span class="line"><span class="tag">&lt;/<span class="name">GlyphOrder</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>其二是我們以自定義的名字命名，如「plus」和「multi」；</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">GlyphOrder</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- The &#x27;id&#x27; attribute is only for humans; it is ignored when parsed. --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;0&quot;</span> <span class="attr">name</span>=<span class="string">&quot;.notdef&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;1&quot;</span> <span class="attr">name</span>=<span class="string">&quot;NULL&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;2&quot;</span> <span class="attr">name</span>=<span class="string">&quot;CR&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;3&quot;</span> <span class="attr">name</span>=<span class="string">&quot;space&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;4&quot;</span> <span class="attr">name</span>=<span class="string">&quot;exclam&quot;</span>/&gt;</span></span><br><span class="line">	......</span><br><span class="line"><span class="tag">&lt;/<span class="name">GlyphOrder</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>其三是冠以「uni」的標識，其大致的形式與cid相同，且這是High-Logic FontCreator這個軟件默認的自動生成glyph名字的標記方法．</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">GlyphOrder</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- The &#x27;id&#x27; attribute is only for humans; it is ignored when parsed. --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;0&quot;</span> <span class="attr">name</span>=<span class="string">&quot;.notdef&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;1&quot;</span> <span class="attr">name</span>=<span class="string">&quot;uni00001&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;2&quot;</span> <span class="attr">name</span>=<span class="string">&quot;uni00002&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;3&quot;</span> <span class="attr">name</span>=<span class="string">&quot;uni00003&quot;</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">GlyphID</span> <span class="attr">id</span>=<span class="string">&quot;4&quot;</span> <span class="attr">name</span>=<span class="string">&quot;uni00004&quot;</span>/&gt;</span></span><br><span class="line">	......</span><br><span class="line"><span class="tag">&lt;/<span class="name">GlyphOrder</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>這裏需要注意的是，按規定，第一個字形的name必須是未定義的「.notdef」，會被作爲缺字的回退字形．</p>
+<p>至於id，這裏的id又稱之爲gid，我們大致可以理解爲其在字形順序表中的順序，第一行爲0，第二行爲1，依次遞增．順帶說一句，name的標識符是cid的字體一般可以認爲是cid字體（CIDkeyed fonts），而且針對不同的地區和語種，實際上，Adobe公司制定有不同的字形集標準，即對於符合特定的字形集的一系列字體，其特定的glyph符號（定義於name表中）的cid序列碼是固定不變的．</p>
+<p>另外要說明的是，一個字體文件的字形符號，最多只能容納65536個（即2^16），這裏面有歷史遺留原因，也有字體文件的技術原因．</p>
+<p>實際上字體內部定義OpenType特性的GPOS和GSUB的xml表是看着極其費眼的．而字體軟件關於OpenType特性的代碼編輯窗口中的代碼並不與xml表有完全一樣的形式，不同的字體設計軟件也不一樣，xml和High-Logic FontCreator顯示結果的具體的結構對比圖如下：</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://assets.alephbabel.com/img/OPT%20Feature.png"
+                        alt="Sturcture Comparison"
+                 ></p>
+<p>很明顯，High-Logic FontCreator對於原始的表结构層級解析進行了修改，但是其實質上一樣的，只是将GSUB和GPOS的層級进行融合跨越以及将冗余數據进行整合，導出時就又會將其拆分到GSUB和GPOS，故不影響操作平台對最後生產的字體文件的解讀．</p>
+<p>首先，我們先要了解High-Logic FontCreator的OpenType代碼編輯器還定義了大量的字形集合類（class），其作用是將後面的[]中的所有字形設置爲一個字形集合（上文圖中未展示），且其支持簡單的正則表達，比如A-Z，a-z這種．然後他將被下文中的lookup所引用，效果和單個的字形名是類似的（它們引用的都是上文提到的GlyphOrder表裏的name字段）．</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class @KernClass_Phi [Phi];</span><br><span class="line">class @KernClass_Psi [Psi];</span><br><span class="line">class @KernClass13 [Upsilon Upsilondieresis];</span><br><span class="line">class @KernClass_chi [chi];</span><br><span class="line">class @KernClass14 [epsilon epsilontonos];</span><br><span class="line">class @KernClass15 [mu beta eta kappa etatonos];</span><br><span class="line">class @KernClass16 [gamma nu];</span><br><span class="line">class @KernClass17 [iota iotatonos iotadieresis iotadieresistonos];</span><br><span class="line">class @KernClass_lambda [lambda];</span><br><span class="line">class @KernClass18 [alpha delta omicron sigma phi uni03C2 alphatonos omicrontonos];</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<p>然後，來說說幾種官方支持的常見OpenType特性（下文將去掉所有上層層級，僅留lookup層級）．</p>
+<p>常見的特性（feature）諸如aalt（Access All Alternates，啟用所有替換字）、ccmp（Glyph Composition&#x2F;Decomposition，字形組合&#x2F;分解）、kern（Kerning，字距調整）、liga（Standard Ligatures，標準連字）等．</p>
+<p>它們或屬於GPOS（字形定位表），或屬於GSUB（字形替換表），且每個特性又有多個lookup類型組合．舉個例子：</p>
+<p>在High-LogicFontCreator中的有這樣一段lookup代碼：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">lookup Alternate1 &#123;</span><br><span class="line">    sub K -&gt; [K.sc K.alt];</span><br><span class="line">    sub R -&gt; [R.sc R.alt];</span><br><span class="line">    sub a -&gt; [ordfeminine a.end a.superior a.sc];</span><br><span class="line">    sub b -&gt; [b.superior b.sc];</span><br><span class="line">    sub d -&gt; [d.superior d.sc];</span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其大意是，sub後面這個名字的字符會有另外幾種可選字形形式（此lookup如運作於aalt和calt等模式下，Adobe Indesign均支持，但Microsoft Office Word的支持模式比Adobe Indesign少很多，如aalt模式其就是不支持的）．</p>
+<p>其餘的代碼功能請大家自己摸索，不贅述．</p>
+<p><b>致謝</b></p>
+<p>本文有經過和曾經的好友的討論研究，且其幫我製作了層級對應圖，在此表示感谢．</p>
+<p><b>參考資料</b></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/typography/" >https://docs.microsoft.com/en-us/typography/<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://developer.apple.com/fonts/TrueType-Reference-Manual/" >https://developer.apple.com/fonts/TrueType-Reference-Manual/<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://developer.apple.com/fonts/TrueType-Reference-Manual/" >https://developer.apple.com/fonts/TrueType-Reference-Manual/<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://thetype.com/2016/09/10968/?tdsourcetag=s_pctim_aiomsg" >https://thetype.com/2016/09/10968/?tdsourcetag=s_pctim_aiomsg<i class="fas fa-external-link-alt"></i></a></p>
+<p><b>相關工具</b></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://github.com/adobe-type-tools/afdko/" >https://github.com/adobe-type-tools/afdko/<i class="fas fa-external-link-alt"></i></a></p>
+
+                    
+                </div>
+
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                OpenType字體特性小釋
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                posts/aea7392/
+            </div>
+        </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    作者
+                </div>
+                <div class="content">巴別塔之貓</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    發布於
+                </div>
+                <div class="content">2020-04-09 22:30</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    © 版權信息
+                </div>
+                <div class="content tooltip" data-tooltip-content="">
+                    <a href="https://buch.alephbabel.com/about/" target="_blank">
+                        
+                            請参攷本站「關於」頁面的版權聲明．🔗
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="復製許可信息" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%8E%9F%E5%89%B5/">原創</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E6%8A%80%E8%A1%93/">技術</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/posts/5d379ead/"
+                                   title="論「呂」「吕」"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">論「呂」「吕」</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/posts/e62e3063/"
+                                   title="漢字與字體雜談錄"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">漢字與字體雜談錄</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-OpenType%E8%88%87TrueType%E7%9A%84%E6%AD%B7%E5%8F%B2"><span class="nav-text">一　OpenType與TrueType的歷史</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-OpenType%E8%88%87TrueType%E5%AD%97%E9%AB%94%E7%9A%84%E5%85%A7%E9%83%A8%E6%A7%8B%E9%80%A0"><span class="nav-text">二　OpenType與TrueType字體的內部構造</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89-OpenType%E7%89%B9%E6%80%A7%E7%B0%A1%E4%BB%8B"><span class="nav-text">三　OpenType特性簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B-OpenType%E7%89%B9%E6%80%A7%E6%9F%A5%E7%9C%8B%E8%88%87%E7%B0%A1%E5%96%AE%E4%BF%AE%E6%94%B9"><span class="nav-text">四　OpenType特性查看與簡單修改</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;<span>2017</span>&nbsp;-&nbsp;2026
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">巴別塔之貓</a>
+        
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+            本站由 <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="/images/brands/github.png"></span> 提供部署服務
+            
+        </div>
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">讀者</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">閱覽</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜尋..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+
+<div class="btm-entry">
+<div class="lt-cate">
+<p><b>
+<i class="fa-solid fa-layer-group"></i> 按分類查找</b>
+</p>
+
+        <div class="cate-page-container">
+        
+                <div class="cate-list-content">
+                    <ul class="cate-list" itemprop="keywords"><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E5%8F%A4%E6%96%87%E5%AD%97%E5%AD%B8/" rel="category">古文字學</a><span class="cate-list-count">3</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E5%93%B2%E8%AD%AF/" rel="category">哲譯</a><span class="cate-list-count">1</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E6%95%B8%E5%AD%B8/" rel="category">數學</a><span class="cate-list-count">2</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E6%96%87%E5%AD%B8/" rel="category">文學</a><span class="cate-list-count">3</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E6%9C%97%E8%AA%A6/" rel="category">朗誦</a><span class="cate-list-count">1</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E6%BC%A2%E8%AA%9E%E8%AA%9E%E8%A8%80%E5%AD%B8/" rel="category">漢語語言學</a><span class="cate-list-count">2</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E8%A6%96%E9%A0%BB/" rel="category">視頻</a><span class="cate-list-count">2</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8%E8%88%87%E6%8A%80%E8%A1%93/" rel="category">計算機科學與技術</a><span class="cate-list-count">2</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E8%AA%9E%E8%A8%80%E5%AD%B8%E7%BF%92/" rel="category">語言學習</a><span class="cate-list-count">3</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E8%AA%9E%E8%AD%AF/" rel="category">語譯</a><span class="cate-list-count">3</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E9%96%92%E8%AB%87/" rel="category">閒談</a><span class="cate-list-count">2</span></li><li class="cate-list-item"><a class="cate-list-link" href="/categories/%E9%9B%9C%E9%A0%85/" rel="category">雜項</a><span class="cate-list-count">1</span></li></ul>
+                </div>
+        
+    </div>
+<div>
+<div class="rt-tag">
+<p><b>
+<i class="fa-solid fa-tags"></i> 按標籤查找</b>
+</p>
+    <div class="tag-page-container">
+        
+                <div class="tag-list-content">
+                    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8E%9F%E5%89%B5/" rel="tag">原創</a><span class="tag-list-count">18</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%A4%E8%A9%A9%E8%A9%9E/" rel="tag">古詩詞</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%93%B2%E5%AD%B8/" rel="tag">哲學</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BD%A2%E5%BC%8F%E8%AA%9E%E6%B3%95/" rel="tag">形式語法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%9D%E7%B4%A2/" rel="tag">思索</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E8%A1%93/" rel="tag">技術</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8B%89%E4%B8%81%E8%AA%9E/" rel="tag">拉丁語</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B8%E7%90%86%E8%AA%9E%E8%A8%80%E5%AD%B8/" rel="tag">數理語言學</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%B9%E8%A8%80%E8%AA%BF%E6%9F%A5/" rel="tag">方言調查</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AD%B7%E5%8F%B2%E8%AA%9E%E8%A8%80%E5%AD%B8/" rel="tag">歷史語言學</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%BC%A2%E8%AA%9E%E5%8F%B2/" rel="tag">漢語史</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%90%86%E8%AB%96/" rel="tag">理論</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A4%BE%E6%9C%83%E8%AA%9E%E8%A8%80%E5%AD%B8/" rel="tag">社會語言學</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AB%A5%E8%A9%B1/" rel="tag">童話</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B5%B1%E8%A8%88%E5%AD%B8/" rel="tag">統計學</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B6%B2%E7%AB%99/" rel="tag">網站</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BF%BB%E8%AD%AF/" rel="tag">翻譯</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AA%9E/" rel="tag">英語</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A5%BF%E6%96%B9%E8%AA%9E%E8%A8%80%E5%AD%B8/" rel="tag">西方語言學</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AA%9E%E8%A8%80%E5%8F%B2/" rel="tag">語言史</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AA%9E%E8%A8%80%E5%AD%B8/" rel="tag">語言學</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AA%9E%E8%A8%80%E5%AD%B8%E7%BF%92/" rel="tag">語言學習</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AA%9E%E8%A8%80%E6%8E%A5%E8%A7%B8/" rel="tag">語言接觸</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AA%9E%E9%9F%B3%E5%AD%B8/" rel="tag">語音學</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%81%8A%E6%88%B2/" rel="tag">遊戲</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9F%B3%E9%9F%BB%E6%96%B9%E8%A8%80%E6%96%87%E5%AD%97/" rel="tag">音韻方言文字</a><span class="tag-list-count">9</span></li></ul>
+                </div>
+        
+    </div>
+
+<div>
+
+        </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-OpenType%E8%88%87TrueType%E7%9A%84%E6%AD%B7%E5%8F%B2"><span class="nav-text">一　OpenType與TrueType的歷史</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-OpenType%E8%88%87TrueType%E5%AD%97%E9%AB%94%E7%9A%84%E5%85%A7%E9%83%A8%E6%A7%8B%E9%80%A0"><span class="nav-text">二　OpenType與TrueType字體的內部構造</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89-OpenType%E7%89%B9%E6%80%A7%E7%B0%A1%E4%BB%8B"><span class="nav-text">三　OpenType特性簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B-OpenType%E7%89%B9%E6%80%A7%E6%9F%A5%E7%9C%8B%E8%88%87%E7%B0%A1%E5%96%AE%E4%BF%AE%E6%94%B9"><span class="nav-text">四　OpenType特性查看與簡單修改</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/toggle-theme.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/code-block.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/libs/anime.min.js"></script>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f02643db83e42f99dfa60acd4b7607e"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- local search -->
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/local-search.js"></script>
+
+
+<!-- lazyload -->
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/lazyload.js"></script>
+
+
+<div class="pjax">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/post/post-helper.js"></script>
+
+        <!-- toc -->
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/post/toc.js"></script>
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+    
+        
+            
+<script class="custom-inject-js" src="/js/jquery.js" data-pjax></script>
+
+        
+    
+        
+            
+<script class="custom-inject-js" src="/js/custom.js" data-pjax></script>
+
+        
+    
+        
+            
+<script class="custom-inject-js" src="/js/about.js" data-pjax></script>
+
+        
+    
+
+</body>
+</html>
