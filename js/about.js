@@ -1,8 +1,8 @@
 function refreshKeepImageEffects() {
-  if (window.KEEP && KEEP.utils && typeof KEEP.utils.zoomInImage === 'function') {
+  if (typeof KEEP !== 'undefined' && KEEP.utils && typeof KEEP.utils.zoomInImage === 'function') {
     KEEP.utils.zoomInImage();
   }
-  if (window.KEEP && typeof KEEP.initLazyLoad === 'function') {
+  if (typeof KEEP !== 'undefined' && typeof KEEP.initLazyLoad === 'function') {
     KEEP.initLazyLoad();
   }
 }
