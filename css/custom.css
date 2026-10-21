@@ -310,7 +310,15 @@ p img{
 }
 }
 
+.highlight-container.mac .code-tools-box {
+  background-color: #CFCECC;
+  border-top-left-radius: 0.55rem;
+  border-top-right-radius: 0.55rem;
+}
 
+.highlight-container.mac {
+  box-shadow: none;
+}
 
 /*@media (max-width: 400px) {
   .search-pop-overlay .search-popup{
@@ -534,7 +542,8 @@ code{
 }
 
 .aboutava{
-  width: 7rem;
+  width: 7rem!important;
+  height: 7rem!important;
   border: 0.2rem solid transparent;
   background: conic-gradient(#FD5353, #F78542, #FFEE49, #1CEFA9, #3399FF, #9966FF, #FD5353) border-box;
   margin: 0!important;
@@ -667,6 +676,15 @@ li#tab2{
   border: 2px solid #eee;
   box-sizing: border-box;
   border-radius: 0px 0px 8px 8px;
+}
+
+.page-content {
+  container-type: inline-size;
+}
+
+.page-content img{
+  height: 40cqi;
+  width: auto;
 }
 
 .short-post-list p{

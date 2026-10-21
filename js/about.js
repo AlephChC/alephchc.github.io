@@ -1,3 +1,12 @@
+function refreshKeepImageEffects() {
+  if (window.KEEP && KEEP.utils && typeof KEEP.utils.zoomInImage === 'function') {
+    KEEP.utils.zoomInImage();
+  }
+  if (window.KEEP && typeof KEEP.initLazyLoad === 'function') {
+    KEEP.initLazyLoad();
+  }
+}
+
 function aboutPageHandle() {
   let about = document.getElementById("about-me");
   if (!about) return;
@@ -71,7 +80,7 @@ function aboutPageHandle() {
       const h3s = ht.querySelectorAll("h3");
       if (h3s.length >= 5) {
         const start = h3s[0];
-        const end = h3s[4];
+        const end = h3s[5];
         let current = start;
         let content = "";
 
@@ -79,8 +88,11 @@ function aboutPageHandle() {
           content += current.outerHTML;
           current = current.nextElementSibling;
         }
-        let shortPosts = document.getElementById("short-posts");
-        if (shortPosts) shortPosts.innerHTML = current ? current.outerHTML : "";
+        // let shortPosts = document.getElementById("short-posts");
+        content = content.replace(/<hr>\s*$/, "");
+        let shortPostList = document.querySelector(".short-post-list");
+        // if (shortPosts) shortPosts.innerHTML = current ? current.outerHTML : "";
+        if (shortPostList) shortPostList.innerHTML = content;
       } else {
         const start = ht.querySelector("hr");
 
@@ -95,6 +107,7 @@ function aboutPageHandle() {
           if (shortPostList) shortPostList.innerHTML = content;
         }
       }
+      refreshKeepImageEffects();
     });
 }
 
