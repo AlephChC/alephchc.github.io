@@ -301,7 +301,8 @@ p img{
 }
 
 .page-content p:has(img) {
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
 }
 }
 
