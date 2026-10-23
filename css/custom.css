@@ -299,6 +299,10 @@ p img{
   .btm-entry .tag-page-container{
   font-size: calc(var(--base-font-size) * 0.56)!important;
 }
+
+.page-content p:has(img) {
+  scrollbar-width: none;
+}
 }
 
 @media (max-width: 420px) {
