@@ -327,10 +327,10 @@ p img{
   font-size: calc(var(--base-font-size) * 0.56)!important;
 }
 
-.page-content p:has(img) {
+/*.page-content p:has(img) {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-}
+}*/
 }
 
 @media (max-width: 420px) {
